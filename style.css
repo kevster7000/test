@@ -1,7 +1,11 @@
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
-h1 { color:gold;}
+h1 { 
+    color:gold;
+    background-color: gray;
+}
 .blue { color: blue;}
+body {
+    background-color: gainsboro;
+}
