@@ -1,6 +1,8 @@
 <img src="./animationTest.svg" width="100%" />
 
-Hullo, this is just a playground for me to learn and test Git/GitHub
+<img src="./eventTest.svg" />
+
+Hullo, this is just a playground for me to learn and test random shenanigans
 
 ```stl
 solid cube_corner
