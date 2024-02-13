@@ -2,6 +2,8 @@
 
 <img src="./eventTest.svg" />
 
+<img src="./eventTest2.svg" />
+
 Hullo, this is just a playground for me to learn and test random shenanigans
 
 ```stl
