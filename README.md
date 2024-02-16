@@ -1,5 +1,7 @@
 <img src="./animationTest.svg" width="100%" />
 
+<img src="./animationTest2.svg" width="100%" />
+
 <img src="./eventTest.svg" />
 
 <img src="./eventTest2.svg" />
