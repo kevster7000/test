@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" width="500" height="500"> 
+    <defs>
+        <radialGradient id="Gradient1" cx="0.5" cy="0.5" r="0.75">
+            <stop offset="0" stop-color="#204f63"/>
+            <stop offset="1" stop-color="#2A375D"/>
+        </radialGradient>
+        <style>
+            p {
+                color: white;
+                background-color: blue;
+            }
+        </style>
+    </defs>
+    <polygon points="5,5 95,10 85,85 10,95" fill="url(#Gradient1)" filter="url(#Filter1)" />
+    <foreignObject x="10" y="10" width="50" height="50">
+        <p>Hallo</p>
+    </foreignObject>
+</svg>
