@@ -13,6 +13,6 @@
     </defs>
     <polygon points="5,5 95,10 85,85 10,95" fill="url(#Gradient1)" filter="url(#Filter1)" />
     <foreignObject x="10" y="10" width="50" height="50">
-        <p>Hallo</p>
+        <p xmlns="http://www.w3.org/1999/xhtml">Hallo</p>
     </foreignObject>
 </svg>
