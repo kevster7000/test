@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 50vh;
+    margin: 5rem;
+    border: 1px solid black;
+}
+.card {
+    height: 100%;
+    flex-grow: 1;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    transition: flex-grow 0.3s;
+}
+.card:nth-child(even) {
+    background-color:cornsilk;
+}
+.card:nth-child(odd) {
+    background-color:mediumaquamarine;
+}
+.card:hover {
+    flex-grow: 3;
+}

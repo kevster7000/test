@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #131316;
+    color: #fff;
+    font-family: sans-serif;
+}
+section {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.hidden, .show {
+    opacity: 1;
+    transition: none;
+}
+@media(prefers-reduced-motion: no-preference) {
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transition: all 1s, blur 0.5s;
+
+    }
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        animation: display 1s forwards;
+    }
+    @keyframes display {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+}

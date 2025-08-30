@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		:root {
+			--var-2: blue;
+
+		}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		html {
+		}
+		body {
+			height: 200vh;
+		}
+		svg {
+			width: clamp(600px, 50vw, 1200px)
+		}
+        foreignObject {
+            color: white;
+            font: 10px Montserrat;
+            overflow: auto;
+        }
+        foreignObject ul {
+            list-style-position: inside;
+        }
+		form input {
+			margin: 0.5rem 0;
+			margin-right: 0.25rem;
+			padding: 0.125rem;
+            width: 50%;
+			font: inherit;
+			border: none;
+			outline: transparent;
+        }
+		form button {
+			font: inherit;
+			padding: 0.125rem 0.25rem;
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.25s, scale 0.25s;
+        }
+		form button:is(:hover, :focus-visible) {
+			background-color: rgb(208, 238, 208);
+			scale: 1.05;
+        }
+		ul button {
+			font: inherit;
+			padding: 0;
+			line-height: 0.5rem;
+			vertical-align: middle;
+			background-color: transparent;
+			color: gray;
+			border: none;
+			cursor: pointer;
+			transition: color 0.25s;
+		}
+		
+		header {
+			
+			background: radial-gradient(circle at top right, #333, #333 50%, #eee 75%, #333 75%);;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div>a</div>
+		<div>b</div>
+		<div>c</div>
+		<div>d</div>
+		<div>e</div>
+		<div>f</div>
+	</header>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-10 -10 220 220"> 
+		<defs>
+			<radialGradient id="Gradient1" cx="0.5" cy="0.5" r="0.75">
+				<stop offset="0" stop-color="#204f63"/>
+				<stop offset="1" stop-color="#2A375D"/>
+			</radialGradient>
+			<filter id="Filter1" primitiveUnits="objectBoundingBox">
+				<feTurbulence baseFrequency="0.5" numOctaves="1" result="turbulence" type="fractalNoise"/>
+				<feDisplacementMap in="SourceGraphic" in2="turbulence" scale="0.125" xChannelSelector="R" result="turbulence">
+					<animate attributeName="scale" values="0;0.5;0" dur="10s" repeatCount="indefinite" />
+				</feDisplacementMap>
+				<feDropShadow in="SourceGraphic" stdDeviation="0.01" dx="0.015" dy="0.02" flood-color="#777" result="shadow" />
+				<feMerge>
+					<feMergeNode in="shadow"/>
+					<feMergeNode in="turbulence"/>
+				</feMerge>
+			</filter>
+		</defs>
+        <polygon points="5,5 195,10 185,185 10,195" fill="url(#Gradient1)" filter="url(#Filter1)" />
+        <foreignObject x="20" y="20" width="160" height="160">
+            <h1>Grocery List</h1>
+			<form>
+				<input id="input" type="text">
+				<button id="add-item">Add</button>
+			</form>
+            <ul id="grocery-list">
+                <li>Pork <button>X</button></li>
+                <li>Eggs <button>X</button></li>
+                <li>Milk <button>X</button></li>
+                <li>Cabbage <button>X</button></li>
+                <li>Green Onion <button>X</button></li>
+                <li>Cereal <button>X</button></li>
+                <li>Water <button>X</button></li>
+                <li>Detergent <button>X</button></li>
+                <li>Tissues <button>X</button></li>
+                <li>Salmon <button>X</button></li>
+                <li>Bell Pepper <button>X</button></li>
+            </ul>
+        </foreignObject>
+    </svg>
+	<script defer>
+		const input = document.getElementById("input");
+		const addBtn = document.getElementById("add-item");
+		const groceryList = document.getElementById("grocery-list")
+		createDeleteButtons();
+
+		addBtn.addEventListener("click", () => {
+			event.preventDefault();
+			if(input.value.trim()) {
+				groceryList.innerHTML += `<li>${input.value} <button>X</button></li>`;
+				createDeleteButtons();
+			}
+		});
+
+		function createDeleteButtons() {
+			const deleteButtons = document.querySelectorAll("ul li button");
+			for(let btn of deleteButtons) {
+				btn.addEventListener("click", () => {
+					let groceryItem = btn.parentElement;
+					groceryItem.remove(); 
+				})
+			}
+		}
+	</script>
+</body>
+</html>

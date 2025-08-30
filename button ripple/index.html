@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Ripple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="btn"><span>Button</span></button>
+
+    <script>
+        const btn = document.querySelector(".btn");
+
+        btn.addEventListener("mouseover", (event) => {
+            const x = event.pageX - btn.offsetLeft;
+            const y = event.pageY - btn.offsetTop;
+
+            btn.style.setProperty("--xPos", x + "px");    
+            btn.style.setProperty("--yPos", y + "px");
+            // either way works
+            // btn.style = `--xPos: ${x}px; --yPos: ${y}px`;
+        });
+    </script>
+</body>
+</html>

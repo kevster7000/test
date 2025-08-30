@@ -1,15 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Playground</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-</head>
-<body>
-    <h1>OCEAN</h1>
-    <p>Hey</p>
-    <p>Yo</p>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Git Playground</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<h1>OCEAN</h1>
+		<p>Hey</p>
+		<p>Yo</p>
+		<section id="container">
+			<article id="direct_child">
+				<p id="grandchild">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Blanditiis sint sapiente, vero fugit pariatur iusto quam hic
+					iste impedit nemo ea delectus, laborum ab alias? Voluptatum,
+					aliquam? Libero, ullam repellendus.
+				</p>
+			</article>
+		</section>
+		<iframe
+			id="12801123"
+			allowtransparency="true"
+			frameborder="0"
+			style="width: 100%; border: none"
+			src="https://www.chess.com/emboard?id=12801123"
+		></iframe>
+		<script nonce="chesscom-diagram">
+			window.addEventListener("message", (e) => {
+				e["data"] &&
+					"12801123" === e["data"]["id"] &&
+					document.getElementById(`${e["data"]["id"]}`) &&
+					(document.getElementById(
+						`${e["data"]["id"]}`
+					).style.height = `${e["data"]["frameHeight"] + 37}px`);
+			});
+		</script>
+		<iframe
+			id="12801129"
+			allowtransparency="true"
+			frameborder="0"
+			style="width: 100%; border: none"
+			src="https://www.chess.com/emboard?id=12801129"
+		></iframe>
+		<script nonce="chesscom-diagram">
+			window.addEventListener("message", (e) => {
+				e["data"] &&
+					"12801129" === e["data"]["id"] &&
+					document.getElementById(`${e["data"]["id"]}`) &&
+					(document.getElementById(
+						`${e["data"]["id"]}`
+					).style.height = `${e["data"]["frameHeight"] + 37}px`);
+			});
+		</script>
+		<iframe
+			id="12801133"
+			allowtransparency="true"
+			frameborder="0"
+			style="width: 100%; border: none"
+			src="https://www.chess.com/emboard?id=12801133"
+		></iframe>
+		<script nonce="chesscom-diagram">
+			window.addEventListener("message", (e) => {
+				e["data"] &&
+					"12801133" === e["data"]["id"] &&
+					document.getElementById(`${e["data"]["id"]}`) &&
+					(document.getElementById(
+						`${e["data"]["id"]}`
+					).style.height = `${e["data"]["frameHeight"] + 37}px`);
+			});
+		</script>
+	</body>
 </html>

@@ -1,0 +1,99 @@
+<svg id="graphic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 100 100" width="500" height="500" style="background-color: hsl(240, 5%, 9%)">
+    <g transform="translate(15)">
+        <g transform="translate(130)">
+            <defs>
+                <clipPath id="clip0">
+                    <path d="M -10 50 C 15 40, 25 20, 50 20 C 75 20, 85 40, 110 50 C 85 60, 75 80, 50 80 C 25 80, 15 60, -10 50 Z" 
+                        fill="transparent" stroke="hsla(233, 12%, 73%, 0.9)" stroke-width="5" stroke-linejoin="bevel">
+                        <animate id="frame10" attributeName="d" to="M -10 50 C 20 40, 30 30, 50 30 C 70 30, 80 40, 110 50 C 85 60, 75 77, 50 77 C 25 77, 15 60, -10 50 Z" begin="0s;frame80.end + 1.25s" dur=".05s" fill="freeze"/>
+                        <animate id="frame20" attributeName="d" to="M -10 50 C 20 50, 30 43, 50 42 C 70 43, 80 50, 110 50 C 85 60, 75 74, 50 74 C 25 74, 15 60, -10 50 Z" begin="frame10.end" dur=".05s" fill="freeze"/>
+                        <animate id="frame30" attributeName="d" to="M -10 50 C 20 60, 30 53, 50 52 C 70 53, 80 60, 110 50 C 85 60, 75 71, 50 71 C 25 71, 15 60, -10 50 Z" begin="frame20.end" dur=".05s" fill="freeze"/>
+                        <animate id="frame40" attributeName="d" to="M -10 50 C 20 60, 30 67, 50 67 C 70 67, 80 60, 110 50 C 85 60, 75 69, 50 69 C 25 69, 15 60, -10 50 Z" begin="frame30.end" dur=".05s" fill="freeze"/>
+                        <animate id="frame50" attributeName="d" to="M -10 50 C 20 60, 30 53, 50 52 C 70 53, 80 60, 110 50 C 85 60, 75 71, 50 71 C 25 71, 15 60, -10 50 Z" begin="frame40.end + 0.075s" dur=".05s" fill="freeze"/>
+                        <animate id="frame60" attributeName="d" to="M -10 50 C 20 50, 30 40, 50 40 C 70 40, 80 50, 110 50 C 85 60, 75 74, 50 74 C 25 74, 15 60, -10 50 Z" begin="frame50.end" dur=".05s" fill="freeze"/>
+                        <animate id="frame70" attributeName="d" to="M -10 50 C 20 40, 30 30, 50 30 C 70 30, 80 40, 110 50 C 85 60, 75 77, 50 77 C 25 77, 15 60, -10 50 Z" begin="frame60.end" dur=".05s" fill="freeze"/>
+                        <animate id="frame80" attributeName="d" to="M -10 50 C 15 40, 25 20, 50 20 C 75 20, 85 40, 110 50 C 85 60, 75 80, 50 80 C 25 80, 15 60, -10 50 Z" begin="frame70.end" dur=".05s" fill="freeze"/>
+                    </path>
+                </clipPath>
+            </defs>
+            <g clip-path="url(#clip0)">
+                <circle id="eye" cx="50" cy="50" r="18" fill="hsla(233, 12%, 73%, 0.9)"/>
+                <circle id="eye-reflection" cx="55" cy="45" r="6" fill="hsl(240, 5%, 9%)"/>
+            </g>
+            <g>
+                <path d="M -10 50 C 15 40, 25 20, 50 20 C 75 20, 85 40, 110 50 C 85 60, 75 80, 50 80 C 25 80, 15 60, -10 50 Z" 
+                    fill="transparent" stroke="hsla(233, 12%, 73%, 0.9)" stroke-width="5" stroke-linejoin="bevel">
+                    <animate id="frame1" attributeName="d" to="M -10 50 C 20 40, 30 30, 50 30 C 70 30, 80 40, 110 50 C 85 60, 75 77, 50 77 C 25 77, 15 60, -10 50 Z" begin="0s;frame8.end + 1.25s" dur=".05s" fill="freeze"/>
+                    <animate id="frame2" attributeName="d" to="M -10 50 C 20 50, 30 40, 50 40 C 70 40, 80 50, 110 50 C 85 60, 75 74, 50 74 C 25 74, 15 60, -10 50 Z" begin="frame1.end" dur=".05s" fill="freeze"/>
+                    <animate id="frame3" attributeName="d" to="M -10 50 C 20 60, 30 50, 50 50 C 70 50, 80 60, 110 50 C 85 60, 75 71, 50 71 C 25 71, 15 60, -10 50 Z" begin="frame2.end" dur=".05s" fill="freeze"/>
+                    <animate id="frame4" attributeName="d" to="M -10 50 C 20 60, 30 65, 50 65 C 70 65, 80 60, 110 50 C 85 60, 75 69, 50 69 C 25 69, 15 60, -10 50 Z" begin="frame3.end" dur=".05s" fill="freeze"/>
+                    <animate id="frame5" attributeName="d" to="M -10 50 C 20 60, 30 50, 50 50 C 70 50, 80 60, 110 50 C 85 60, 75 71, 50 71 C 25 71, 15 60, -10 50 Z" begin="frame4.end + 0.075s" dur=".05s" fill="freeze"/>
+                    <animate id="frame6" attributeName="d" to="M -10 50 C 20 50, 30 40, 50 40 C 70 40, 80 50, 110 50 C 85 60, 75 74, 50 74 C 25 74, 15 60, -10 50 Z" begin="frame5.end" dur=".05s" fill="freeze"/>
+                    <animate id="frame7" attributeName="d" to="M -10 50 C 20 40, 30 30, 50 30 C 70 30, 80 40, 110 50 C 85 60, 75 77, 50 77 C 25 77, 15 60, -10 50 Z" begin="frame6.end" dur=".05s" fill="freeze"/>
+                    <animate id="frame8" attributeName="d" to="M -10 50 C 15 40, 25 20, 50 20 C 75 20, 85 40, 110 50 C 85 60, 75 80, 50 80 C 25 80, 15 60, -10 50 Z" begin="frame7.end" dur=".05s" fill="freeze"/>
+                </path>
+            </g>
+        </g>
+        <g>
+            <g>
+                <circle id="eye" cx="50" cy="50" r="18" fill="hsla(233, 12%, 73%, 0.9)"/>
+                <circle id="eye-reflection" cx="55" cy="45" r="6" fill="hsl(240, 5%, 9%)"/>
+            </g>
+            <path d="M -10 50 C 15 40, 25 20, 50 20 C 75 20, 85 40, 110 50 C 85 60, 75 80, 50 80 C 25 80, 15 60, -10 50 Z" 
+                fill="transparent" stroke="hsla(233, 12%, 73%, 0.9)" stroke-width="5" stroke-linejoin="bevel"/>
+        </g>
+        <g transform="translate(0, 70)">
+            <g>
+                <circle id="eye" cx="50" cy="50" r="18" fill="hsla(233, 12%, 73%, 0.9)"/>
+                <circle id="eye-reflection" cx="55" cy="45" r="6" fill="hsl(240, 5%, 9%)"/>
+            </g>
+            <path d="M -10 50 C 20 40, 30 30, 50 30 C 70 30, 80 40, 110 50 C 85 60, 75 77, 50 77 C 25 77, 15 60, -10 50 Z" 
+                fill="transparent" stroke="hsla(233, 12%, 73%, 0.9)" stroke-width="5" stroke-linejoin="bevel"/>
+        </g>
+        <g transform="translate(0, 140)">
+            <defs>
+                <clipPath id="clip1">
+                    <path d="M -10 50 C 20 50, 30 43, 50 42 C 70 43, 80 50, 110 50 C 85 60, 75 74, 50 74 C 25 74, 15 60, -10 50 Z" 
+                    fill="white" stroke="hsla(233, 12%, 73%, 0.9)" stroke-width="5" stroke-linejoin="bevel"/>
+                </clipPath>
+            </defs>
+            <g clip-path="url(#clip1)">
+                <circle id="eye" cx="50" cy="50" r="18" fill="hsla(233, 12%, 73%, 0.9)"/>
+                <circle id="eye-reflection" cx="55" cy="45" r="6" fill="hsl(240, 5%, 9%)"/>
+            </g>
+            <path d="M -10 50 C 20 50, 30 40, 50 40 C 70 40, 80 50, 110 50 C 85 60, 75 74, 50 74 C 25 74, 15 60, -10 50 Z" 
+                fill="transparent" stroke="hsla(233, 12%, 73%, 0.9)" stroke-width="5" stroke-linejoin="bevel"/>
+        </g>
+        <g transform="translate(0, 210)">
+            <defs>
+                <clipPath id="clip2">
+                    <path d="M -10 50 C 20 60, 30 53, 50 52 C 70 53, 80 60, 110 50 C 85 60, 75 71, 50 71 C 25 71, 15 60, -10 50 Z" 
+                    fill="white" stroke="hsla(233, 12%, 73%, 0.9)" stroke-width="5" stroke-linejoin="bevel"/>
+                </clipPath>
+            </defs>
+            <g clip-path="url(#clip2)">
+                <circle id="eye" cx="50" cy="50" r="18" fill="hsla(233, 12%, 73%, 0.9)"/>
+                <circle id="eye-reflection" cx="55" cy="45" r="6" fill="hsl(240, 5%, 9%)"/>
+            </g>
+            <path d="M -10 50 C 20 60, 30 50, 50 50 C 70 50, 80 60, 110 50 C 85 60, 75 71, 50 71 C 25 71, 15 60, -10 50 Z" 
+                fill="transparent" stroke="hsla(233, 12%, 73%, 0.9)" stroke-width="5" stroke-linejoin="bevel"/>
+        </g>
+        <g transform="translate(0, 280)">
+            <defs>
+                <clipPath id="clip3">
+                    <path d="M -10 50 C 20 60, 30 65, 50 67 C 70 65, 80 60, 110 50 C 85 60, 75 69, 50 69 C 25 69, 15 60, -10 50 Z" 
+                    fill="white" stroke="hsla(233, 12%, 73%, 0.9)" stroke-width="5" stroke-linejoin="bevel"/>
+                </clipPath>
+            </defs>
+            <g clip-path="url(#clip3)">
+                <circle id="eye" cx="50" cy="50" r="18" fill="hsla(233, 12%, 73%, 0.9)"/>
+                <circle id="eye-reflection" cx="55" cy="45" r="6" fill="hsl(240, 5%, 9%)"/>
+            </g>
+            <path d="M -10 50 C 20 60, 30 65, 50 65 C 70 65, 80 60, 110 50 C 85 60, 75 69, 50 69 C 25 69, 15 60, -10 50 Z" 
+                fill="transparent" stroke="hsla(233, 12%, 73%, 0.9)" stroke-width="5" stroke-linejoin="bevel"/>
+        </g>
+    </g>
+</svg>
+
+
+        
