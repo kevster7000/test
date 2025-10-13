@@ -3,17 +3,4 @@
 
 @theme {
 	--font-inconsolata: Inconsolata, sans-serif;
-	--text-xs: clamp(0.75rem, 0.075vi + 0.75rem, 0.875rem);
-	--text-sm: clamp(0.875rem, 0.1vi + 0.875rem, 1rem);
-	--text-base: clamp(1rem, 0.25vi + 0.9rem, 1.125rem);
-	--text-lg: clamp(1.125rem, 0.33vi + 1rem, 1.25rem);
-	--text-xl: clamp(1.25rem, 0.5vi + 1.125rem, 1.5rem);
-	--text-2xl: clamp(1.5rem, 0.75vi + 1.25rem, 1.875rem);
-	--text-3xl: clamp(1.875rem, 1vi + 1.65rem, 2.25rem);
-	--text-4xl: clamp(2.25rem, 1.33vi + 2rem, 3rem);
-	--text-5xl: clamp(3rem, 2vi + 2.5rem, 3.75rem);
-	--text-6xl: clamp(3.75rem, 3vi + 3rem, 4.5rem);
-	--text-7xl: clamp(4.5rem, 4vi + 3.75rem, 6rem);
-	--text-8xl: clamp(6rem, 6vi + 4.5rem, 8rem);
-	--text-9xl: clamp(8rem, 9vi + 6rem, 10rem);
 }
