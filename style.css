@@ -41,3 +41,32 @@ p {
 		}
 	}
 }
+
+.hover-test,
+.hover-test-2 {
+	padding: 5rem;
+}
+
+body:has(.hover-test:is(:hover, :focus-visible)) {
+	.hover-p {
+		display: block;
+	}
+}
+
+body:has(.hover-test-2:hover) {
+	.hover-p-2 {
+		display: block;
+	}
+}
+
+.hover-p {
+	display: none;
+	padding: 5rem;
+	background-color: #9ac3ae;
+}
+
+.hover-p-2 {
+	display: none;
+	padding: 5rem;
+	background-color: #9aaec3;
+}
