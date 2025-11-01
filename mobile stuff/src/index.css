@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+	--animate-open: open 0.225s forwards;
+
+	@keyframes open {
+		0% {
+			opacity: 0%;
+			display: none;
+		}
+		100% {
+			opacity: 100%;
+			display: block;
+		}
+	}
+
+	--animate-close: close 0.225s forwards;
+
+	@keyframes close {
+		0% {
+			opacity: 100%;
+			display: block;
+		}
+		100% {
+			opacity: 0%;
+			display: none;
+		}
+	}
+}
