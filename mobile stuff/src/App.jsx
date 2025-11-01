@@ -5,6 +5,7 @@ function App() {
 	const [show2, setShow2] = useState('');
 	const [show3, setShow3] = useState('');
 	const [show4, setShow4] = useState('');
+	const [show5, setShow5] = useState('');
 
 	return (
 		<div>
@@ -55,6 +56,17 @@ function App() {
 					Pointer
 				</button>
 				<p className={`border p-4 ${show4 === 'open' ? 'opacity-100' : show4 === 'close' ? 'opacity-0' : 'opacity-0'}`}>Good morning!</p>
+			</div>
+			<div className='m-3'>
+				<button
+					type='button'
+					className='cursor-help p-4 rounded-full hover:bg-gray-200 focus-visible:bg-gray-200 [transition:background_.225s] [user-select:none]'
+					onPointerEnter={() => setShow5('open')}
+					onPointerLeave={() => setShow5('close')}
+				>
+					Pointer (user-select: none)
+				</button>
+				<p className={`border p-4 ${show5 === 'open' ? 'opacity-100' : show5 === 'close' ? 'opacity-0' : 'opacity-0'}`}>Good morning!</p>
 			</div>
 		</div>
 	);
